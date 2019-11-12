@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server.js",
     "start:dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-init": "./node_modules/jasmine/bin/jasmine.js init",
+    "test": "./node_modules/jasmine/bin/jasmine.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,11 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "pg": "^7.12.1"
+    "pg": "^7.12.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
+    "jasmine": "^3.5.0",
     "nodemon": "^1.19.4"
   }
 }
